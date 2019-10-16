@@ -78,11 +78,11 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DwP-5C-Jkp">
                                                     <rect key="frame" x="20" y="4.5" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wi-fi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGp-fB-z24">
-                                                    <rect key="frame" x="69" y="0.0" width="97" height="34"/>
+                                                    <rect key="frame" x="69" y="0.0" width="306" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -107,7 +107,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-zS-cvA">
                                                     <rect key="frame" x="20" y="0.5" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Photos" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-Hf-A9z">
@@ -118,6 +118,9 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7C4-OD-P0z" kind="show" id="4Nh-JV-jqn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="WAM-7K-Rbm">
                                         <rect key="frame" x="0.0" y="389" width="414" height="43.5"/>
@@ -129,7 +132,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.2.square.stack" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-SA-z9M">
                                                     <rect key="frame" x="20" y="-2.5" width="35" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contacts" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-Yz-Ux6">
@@ -140,6 +143,9 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="qaz-tY-KPB" kind="show" id="vc4-wg-ZTb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -153,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npG-Qy-Fkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="430" y="-38"/>
+            <point key="canvasLocation" x="-2162" y="-239"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="9DD-KL-ybB">
@@ -258,47 +264,109 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHe-80-uc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="-38"/>
+            <point key="canvasLocation" x="-1212" y="-239"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="mdj-t3-C5N">
+        <!--Table View Controller-->
+        <scene sceneID="hbu-tU-ArS">
             <objects>
-                <collectionViewController id="xqO-o2-6Vp" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EpH-bu-eH3" customClass="PhotosCollectionViewController" customModule="IUE_Worksheet3" customModuleProvider="target">
+                <tableViewController id="qaz-tY-KPB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mTe-NX-rYD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9P6-Ms-8Zi">
-                            <size key="itemSize" width="125" height="50"/>
+                        <sections>
+                            <tableViewSection id="5iS-3c-ggl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KwB-2B-Uc8">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KwB-2B-Uc8" id="WLk-SD-4P7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Peter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-Ar-xiY">
+                                                    <rect key="frame" x="94" y="11" width="120" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number: 111 000 222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su1-2o-tXj">
+                                                    <rect key="frame" x="94" y="56" width="188" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="adG-i0-VNG">
+                                                    <rect key="frame" x="0.0" y="14.5" width="86" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="qaz-tY-KPB" id="qw4-5h-3EC"/>
+                            <outlet property="delegate" destination="qaz-tY-KPB" id="EaV-n4-4dD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Iza-8l-O0w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8v-cM-aW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1668.1159420289857" y="501.5625"/>
+        </scene>
+        <!--Photos Collection View Controller-->
+        <scene sceneID="qU8-o1-Xes">
+            <objects>
+                <collectionViewController id="7C4-OD-P0z" customClass="PhotosCollectionViewController" customModule="IUE_Worksheet3" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Q5B-Nv-QSH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m30-Un-GZl">
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="esad" id="kqu-5c-rGr">
-                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DnA-w0-ZAk" customClass="PhotoCollectionViewCell" customModule="IUE_Worksheet3" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="kPA-5a-Hpm" customClass="PhotoCollectionViewCell" customModule="IUE_Worksheet3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Zv-wL-me3">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QQ2-It-Doi">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="esad" translatesAutoresizingMaskIntoConstraints="NO" id="MNg-QH-jhV">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="MNg-QH-jhV" secondAttribute="bottom" id="O0p-QF-6rs"/>
+                                        <constraint firstItem="MNg-QH-jhV" firstAttribute="leading" secondItem="QQ2-It-Doi" secondAttribute="leading" id="gHA-tq-JcV"/>
+                                        <constraint firstAttribute="trailing" secondItem="MNg-QH-jhV" secondAttribute="trailing" id="vVe-4P-FRn"/>
+                                        <constraint firstItem="MNg-QH-jhV" firstAttribute="top" secondItem="QQ2-It-Doi" secondAttribute="top" id="wTw-L8-SSb"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="imageView" destination="MNg-QH-jhV" id="t4u-GF-Nc5"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="xqO-o2-6Vp" id="Lrh-J3-WTu"/>
-                            <outlet property="delegate" destination="xqO-o2-6Vp" id="5aQ-DM-Zg5"/>
+                            <outlet property="dataSource" destination="7C4-OD-P0z" id="pXf-jJ-VLZ"/>
+                            <outlet property="delegate" destination="7C4-OD-P0z" id="xM4-AF-TFY"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="gXd-vc-qUe"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uLK-EZ-a8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gph-AV-TG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1873.913043478261" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="-3010" y="488"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xmM-xq-5FG">
@@ -316,12 +384,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bce-xB-VNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-467" y="-37"/>
+            <point key="canvasLocation" x="-2896" y="-219"/>
         </scene>
     </scenes>
     <resources>
         <image name="airplane" catalog="system" width="64" height="58"/>
-        <image name="esad" width="16" height="16"/>
+        <image name="esad" width="3750" height="5498"/>
         <image name="person.2.square.stack" catalog="system" width="54" height="64"/>
         <image name="person.circle.fill" catalog="system" width="64" height="62"/>
         <image name="photo" catalog="system" width="64" height="48"/>
